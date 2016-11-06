@@ -1,5 +1,6 @@
 options =
   widgetEnable: true
+  avatarEnable: true
   apiKey: 'YourPlexPyAPIKey'
   PlexPyHost: 'YourPlexPyHost'
   protocol: 'https'
@@ -113,7 +114,7 @@ renderSession: (session) -> """
       <div class="progress" style="width: #{session.progress_percent}%"></div>
     </div>
     <div class="info">
-      <img class="avatar" src="#{session.user_thumb}" />
+      <img class="avatar" src="#{session.user_thumb}" style="display: #{if options.avatarEnable then 'block' else 'none'}" />
       <div class="meta">
         <div class="title">#{session.full_title}</div>
         <div class="user">#{session.friendly_name} - #{session.platform}</div>
