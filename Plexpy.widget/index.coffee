@@ -63,12 +63,15 @@ style: """
       text-transform: capitalize
       .state
         flex-grow: 1
+        flex-basis: 33%
         text-align: left
       .duration
         flex-grow: 1
+        flex-basis: 33%
         text-align: right
       .quality
         flex-grow: 1
+        flex-basis: 33%
         text-align: center
     .info
       display: flex
