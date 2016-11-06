@@ -1,6 +1,6 @@
 # PlexPy for [Übersicht](http://tracesof.net/uebersicht/)
 
-![Screenshot](https://up.r4r3.me/u/ProdigalDouchewaffleFucker)
+![Screenshot](https://up.r4r3.me/u/CuntInfidel)
 
 ## [Download](https://github.com/yoyostile/Plexpy-Ubersicht-Widget/raw/master/Plexpy.widget.zip)
 
