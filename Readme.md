@@ -4,7 +4,7 @@
 
 ## [Download](https://github.com/yoyostile/Plexpy-Ubersicht-Widget/raw/master/Plexpy.widget.zip)
 
-A simple widget to display current stream from your Plex Server.
+A simple widget to display current streams from your Plex Server.
 It uses the PlexPy API. [PlexPy](https://github.com/JonnyWong16/PlexPy) is one of the best monitoring tools for your Plex Server. Get it now!
 
 ## Options
