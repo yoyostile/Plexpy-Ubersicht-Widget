@@ -27,7 +27,7 @@ options =
 
 ## TODO
 
-- Let's see...
+* Fix avatar flickering...
 
 ## Contribute
 
