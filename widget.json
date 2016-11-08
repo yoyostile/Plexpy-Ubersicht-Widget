@@ -1,0 +1,6 @@
+{
+  "name": "Plexpy Widget",
+  "description": "A simple widget to display current streams from your Plex Server.",
+  "author": "Johannes Heck",
+  "email": "yoyostile@gmail.com"
+}
