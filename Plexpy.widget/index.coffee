@@ -26,7 +26,7 @@ refreshFrequency: '30s'
 
 options: options
 
-command: "curl -fs '#{options.protocol}://#{options.plexpyHost}/api/v2\?apikey\=#{options.apiKey}\&cmd\=get_activity'"
+command: "curl -fs '#{options.protocol}://#{options.PlexPyHost}/api/v2\?apikey\=#{options.apiKey}\&cmd\=get_activity'"
 
 style: """
   position: absolute
