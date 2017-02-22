@@ -2,7 +2,7 @@ options =
   widgetEnable: true
   avatarEnable: true
   apiKey: 'YourPlexPyAPIKey'
-  PlexPyHost: 'YourPlexPyHost'
+  plexpyHost: 'YourPlexPyHost'
   protocol: 'https'
 
 StringToHHMMSS = (str) ->
@@ -26,7 +26,7 @@ refreshFrequency: '30s'
 
 options: options
 
-command: "curl -fs '#{options.protocol}://#{options.PlexPyHost}/api/v2\?apikey\=#{options.apiKey}\&cmd\=get_activity'"
+command: "curl -fs '#{options.protocol}://#{options.plexpyHost}/api/v2\?apikey\=#{options.apiKey}\&cmd\=get_activity'"
 
 style: """
   position: absolute
@@ -58,7 +58,7 @@ style: """
 
     .playbackInfo
       font-size: 10pt
-      color: rgba(#fff, 0.5)
+      color: rgba(#fff, 0.75)
       margin-bottom: 5px
       display: flex
       text-transform: capitalize
@@ -83,7 +83,7 @@ style: """
       margin-top: 5px
     .user
       font-size: 10pt
-      color: rgba(#fff, 0.5)
+      color: rgba(#fff, 0.75)
       margin-top: 2px
     .avatar
       margin-top: 5px
@@ -125,7 +125,10 @@ renderSession: (session) -> """
 
 update: (output, domEl) ->
   if options.widgetEnable
-    response = JSON.parse(output).response
-    sessions = response.data.sessions
-    sessionsDom = (this.renderSession(session) for session in sessions)
-    $(domEl).find('.plexpyWrapper').html(sessionsDom)
+    try
+      response = JSON.parse(output).response
+      sessions = response.data.sessions
+      sessionsDom = (this.renderSession(session) for session in sessions)
+      $(domEl).find('.plexpyWrapper').html(sessionsDom)
+    catch error
+      $(domEl).find('.plexpyWrapper').html(error)
