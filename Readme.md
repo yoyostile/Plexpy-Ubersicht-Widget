@@ -21,7 +21,7 @@ Also it's important to provide proper credentials for your running PlexPy instan
 ```
 options =
   apiKey: 'YourPlexPyAPIKey'
-  PlexPyHost: 'YourPlexPyHost'
+  plexpyHost: 'YourPlexPyHost'
   protocol: 'https'
 ```
 
