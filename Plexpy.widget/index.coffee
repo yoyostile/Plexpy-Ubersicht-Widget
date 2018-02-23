@@ -131,4 +131,4 @@ update: (output, domEl) ->
       sessionsDom = (this.renderSession(session) for session in sessions)
       $(domEl).find('.plexpyWrapper').html(sessionsDom)
     catch error
-      $(domEl).find('.plexpyWrapper').html(error)
+      console.log(error)
